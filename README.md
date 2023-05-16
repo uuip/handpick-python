@@ -36,16 +36,16 @@
 
 ### File Processing
 
-* xlwings - 交互式操作excel
+* xlwings - interactive operation with excel
 * pyexcel - base on openpyxl
 * openpyxl - pandas's default excel engine
-* xlsxwriter - write fast, can be seted as pandas's excel writing engine
-* python-magic - 识别文件类型
+* xlsxwriter - write faster than openpyxl, can be set as pandas's excel writing engine
+* python-magic - identify file types
 
 ### Web
 
 * requests
-* pysocks - 为requests提供socks5代理
+* pysocks - support socks5 for requests
 * httpx
 * bs4, beautifulsoup4
 
@@ -90,9 +90,9 @@
 * django-extensions
 * jupyterlab
 * jupyterlab-lsp
-* importlib-resources = { version = "^5.7.1", python = "~3.8" }
+* importlib-resources = { version = "^5.7.1", python = "3.8" }
 * python-lsp-server = { extras = ["all"], version = "^1.4.1" }
-* jedi = "<0.18.0" # lsp depend on specific version
+* jedi = "<0.18.0" # python-lsp-server depend on specific version
 
 ### Database
 
