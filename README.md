@@ -73,6 +73,7 @@
 * django-guardian
 * django-import-export
 * django-model-utils
+* django-raw-sugar
 * djangorestframework
 * djangorestframework-simplejwt
 * pyjwt
