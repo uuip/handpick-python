@@ -73,7 +73,18 @@
 * django-guardian
 * django-import-export
 * django-model-utils
+  - SoftDeletableModel
 * django-raw-sugar
+  - turns your raw sql into a QuerySet.
+* django-netfields
+* django-queryable-properties
+* django-extensions
+  - python3 manage.py shell_plus --lab --no-browser
+  - python3 manage.py shell_plus --print-sql –truncate-sql 0
+* django-silk
+  - profiling and inspection tool
+* django-simpleui
+  - django admin theme
 * djangorestframework
 * djangorestframework-simplejwt
 * pyjwt
