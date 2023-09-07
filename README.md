@@ -59,9 +59,10 @@
 ### Async
 
 * uvloop
-* gevent
-* psycogreen
 * nest-asyncio
+* asyncstdlib
+* aiostream
+* pytest-asyncio
 
 ### Django
 
@@ -78,6 +79,7 @@
   - turns your raw sql into a QuerySet.
 * django-netfields
 * django-queryable-properties
+* django-shared-property
 * django-extensions
   - python3 manage.py shell_plus --lab --no-browser
   - python3 manage.py shell_plus --print-sql –truncate-sql 0
@@ -90,11 +92,15 @@
 * pyjwt
 * gunicorn
 
+### Lock
+* PALs
+* django_pglocks
+
 ### Fastapi
 
 * fastapi
-* tortoise-orm = { extras = ["accel", "asyncpg"], version = ">=0.19.3" }
-* pydantic = { extras = ["dotenv"], version = ">=1.10.7" }
+* pydantic = "^2.3.0"
+* pydantic-settings = "^2.0.3"
 * uvicorn
 
 ### JupyterLab
@@ -102,17 +108,15 @@
 * django-extensions
 * jupyterlab
 * jupyterlab-lsp
-* importlib-resources = { version = "^5.7.1", python = "3.8" }
 * python-lsp-server = { extras = ["all"], version = "^1.4.1" }
 * jedi = "<0.18.0" # python-lsp-server depend on specific version
 
 ### Database
 
 * asyncpg
-* psycopg2 #apt install libpq-dev
+* psycopg
 * redis
 * hiredis
-* aioredis
 * aiosqlite
 * DBUtils
 
