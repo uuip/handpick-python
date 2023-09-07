@@ -4,7 +4,6 @@
 
 * poetry
   - poetry self add poetry-plugin-up
-* pipdeptree
 
 ### Code Formatter
 
@@ -69,28 +68,25 @@
 * django
 * django-filter
 * django-redis
-* django-celery-beat
 * django-sql-explorer
-* django-guardian
 * django-import-export
 * django-model-utils
   - SoftDeletableModel
 * django-raw-sugar
   - turns your raw sql into a QuerySet.
-* django-netfields
-* django-queryable-properties
-* django-shared-property
-* django-extensions
-  - python3 manage.py shell_plus --lab --no-browser
-  - python3 manage.py shell_plus --print-sql –truncate-sql 0
-* django-silk
-  - profiling and inspection tool
-* django-simpleui
-  - django admin theme
 * djangorestframework
 * djangorestframework-simplejwt
 * pyjwt
 * gunicorn
+
+* django-netfields
+* django-queryable-properties
+* django-shared-property
+* django-guardian
+* django-silk
+  - profiling and inspection tool
+* django-simpleui
+  - django admin theme
 
 ### Lock
 * PALs
@@ -105,11 +101,12 @@
 
 ### JupyterLab
 
-* django-extensions
 * jupyterlab
 * jupyterlab-lsp
 * python-lsp-server = { extras = ["all"], version = "^1.4.1" }
 * jedi = "<0.18.0" # python-lsp-server depend on specific version
+* django-extensions
+  - python3 manage.py shell_plus --lab --no-browser
 
 ### Database
 
@@ -118,7 +115,6 @@
 * redis
 * hiredis
 * aiosqlite
-* DBUtils
 
 ### ORM
 
@@ -129,6 +125,7 @@
 
 * apscheduler
 * celery
+* django-celery-beat
 
 ### Data Factories
 
