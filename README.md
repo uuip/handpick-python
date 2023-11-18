@@ -115,6 +115,9 @@
 * redis
 * hiredis
 * aiosqlite
+* pymongo
+* motor
+* rocksdict
 
 ### ORM
 
