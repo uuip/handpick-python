@@ -45,7 +45,7 @@
 
 * requests
 * pysocks - support socks5 for requests
-* httpx
+* aiohttp
 * bs4, beautifulsoup4
 
 ### Selenium
@@ -95,8 +95,8 @@
 ### Fastapi
 
 * fastapi
-* pydantic = "^2.3.0"
-* pydantic-settings = "^2.0.3"
+* pydantic
+* pydantic-settings
 * uvicorn
 
 ### JupyterLab
