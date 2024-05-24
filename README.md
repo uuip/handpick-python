@@ -8,7 +8,6 @@
 ### Code Formatter
 
 * black
-* pylint
 
 ### Interactive Interpreter
 
@@ -37,7 +36,8 @@
 
 * xlwings - interactive operation with excel
 * pyexcel - base on openpyxl
-* openpyxl - pandas's default excel engine
+* openpyxl - pandas's default excel engine, don't support xls.
+* python-calamine - read faster than openpyxl, support [ xls, xlsx ], can be set as pandas's excel reading engine.
 * xlsxwriter - write faster than openpyxl, can be set as pandas's excel writing engine
 * python-magic - identify file types
 
@@ -52,7 +52,6 @@
 
 * playwright
 * selenium
-* selenium-wire
 * webdriver-manager
 
 ### Async
@@ -82,9 +81,6 @@
 * django-netfields
 * django-queryable-properties
 * django-shared-property
-* django-guardian
-* django-silk
-  - profiling and inspection tool
 * django-simpleui
   - django admin theme
 
@@ -112,8 +108,7 @@
 
 * asyncpg
 * psycopg
-* redis
-* hiredis
+* redis + hiredis
 * aiosqlite
 * pymongo
 * motor
@@ -133,8 +128,7 @@
 ### Data Factories
 
 * model-bakery
-* factory-boy
-* faker
+* mimesis
 
 ### Shell
 
@@ -159,7 +153,7 @@
 * numpy
 * pyarrow
 * pandas
-* dask = { extras = ["diagnostics", "distributed"], version = ">=2023.4.1" }
+* dask = { version = ">=2024.5.1", extras = ["dask-expr", "diagnostics", "distributed", "psutil"] }
 * polars
 
 
