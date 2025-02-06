@@ -4,12 +4,10 @@
 
 * poetry
   - poetry self add poetry-plugin-up
-* pipdeptree
 
 ### Code Formatter
 
 * black
-* pylint
 
 ### Interactive Interpreter
 
@@ -36,73 +34,85 @@
 
 ### File Processing
 
-* xlwings - 交互式操作excel
+* xlwings - interactive operation with excel
 * pyexcel - base on openpyxl
-* openpyxl - pandas's default excel engine
-* xlsxwriter - write fast, can be seted as pandas's excel writing engine
-* python-magic - 识别文件类型
+* openpyxl - pandas's default excel engine, don't support xls.
+* python-calamine - read faster than openpyxl, support [ xls, xlsx ], can be set as pandas's excel reading engine.
+* xlsxwriter - write faster than openpyxl, can be set as pandas's excel writing engine
+* python-magic - identify file types
 
 ### Web
 
 * requests
-* pysocks - 为requests提供socks5代理
-* httpx
+* pysocks - support socks5 for requests
+* aiohttp
 * bs4, beautifulsoup4
 
 ### Selenium
 
 * playwright
 * selenium
-* selenium-wire
 * webdriver-manager
 
 ### Async
 
 * uvloop
-* gevent
-* psycogreen
 * nest-asyncio
+* asyncstdlib
+* aiostream
+* pytest-asyncio
 
 ### Django
 
 * django
 * django-filter
 * django-redis
-* django-celery-beat
 * django-sql-explorer
-* django-guardian
 * django-import-export
 * django-model-utils
+  - SoftDeletableModel
+* django-raw-sugar
+  - turns your raw sql into a QuerySet.
 * djangorestframework
 * djangorestframework-simplejwt
 * pyjwt
 * gunicorn
 
+* django-netfields
+* django-queryable-properties
+* django-shared-property
+* django-simpleui
+  - django admin theme
+
+### Lock
+* PALs
+* django_pglocks
+
 ### Fastapi
 
 * fastapi
-* tortoise-orm = { extras = ["accel", "asyncpg"], version = ">=0.19.3" }
-* pydantic = { extras = ["dotenv"], version = ">=1.10.7" }
+* pydantic
+* pydantic-settings
 * uvicorn
 
 ### JupyterLab
 
-* django-extensions
 * jupyterlab
 * jupyterlab-lsp
-* importlib-resources = { version = "^5.7.1", python = "~3.8" }
 * python-lsp-server = { extras = ["all"], version = "^1.4.1" }
-* jedi = "<0.18.0" # lsp depend on specific version
+* jedi = "<0.18.0" # python-lsp-server depend on specific version
+* django-extensions
+  - python3 manage.py shell_plus --lab --no-browser
 
 ### Database
 
 * asyncpg
-* psycopg2 #apt install libpq-dev
-* redis
-* hiredis
-* aioredis
+* psycopg
+* redis + hiredis
 * aiosqlite
-* DBUtils
+* pymongo
+* motor
+* rocksdict
 
 ### ORM
 
@@ -113,12 +123,12 @@
 
 * apscheduler
 * celery
+* django-celery-beat
 
 ### Data Factories
 
 * model-bakery
-* factory-boy
-* faker
+* mimesis
 
 ### Shell
 
@@ -143,7 +153,7 @@
 * numpy
 * pyarrow
 * pandas
-* dask = { extras = ["diagnostics", "distributed"], version = ">=2023.4.1" }
+* dask = { version = ">=2024.5.1", extras = ["dask-expr", "diagnostics", "distributed", "psutil"] }
 * polars
 
 
